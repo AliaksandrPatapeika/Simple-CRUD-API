@@ -1,0 +1,38 @@
+{
+  "name": "simple-crud-api",
+  "version": "1.0.0",
+  "description": "NodeJS 2023 Q2 Assignment: CRUD API",
+  "main": "./src/index.ts",
+  "exports": "./dist/index.js",
+  "scripts": {
+    "start:dev": "nodemon --watch",
+    "start:prod": "tsc -p tsconfig.json && node dist/index.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/AliaksandrPatapeika/Simple-CRUD-API.git"
+  },
+  "keywords": [
+    "nodejs",
+    "assignments",
+    "api",
+    "crud"
+  ],
+  "author": "Aliaksandr Patapeika",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/AliaksandrPatapeika/Simple-CRUD-API/issues"
+  },
+  "homepage": "https://github.com/AliaksandrPatapeika/Simple-CRUD-API#readme",
+  "dependencies": {
+    "dotenv": "^16.3.1",
+    "uuid": "^9.0.0"
+  },
+  "devDependencies": {
+    "@types/node": "^18.0.0",
+    "@types/uuid": "^9.0.2",
+    "nodemon": "^2.0.22",
+    "ts-node": "^10.9.1",
+    "typescript": "5.0.4"
+  }
+}
