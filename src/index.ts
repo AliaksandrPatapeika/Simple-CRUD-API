@@ -12,3 +12,13 @@ server
   .on('error', (error: Error) => {
     console.error(`Server failed to start: ${error.message}`);
   });
+
+const closeServer = () => {
+  server.close(() => {
+    console.log('Server closed');
+    process.exit(0);
+  });
+};
+
+process.on('SIGINT', closeServer);
+process.on('SIGTERM', closeServer);
