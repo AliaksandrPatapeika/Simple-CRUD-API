@@ -39,4 +39,3 @@ NodeJS CRUD API
 - Production mode: Use `npm run start:prod` to build the production version and run the compiled files.
 7. Unit tests are implemented using Jest. At least three test scenarios should be included, covering different API endpoints and error cases.
 8. Horizontal scaling is implemented using the Node.js Cluster API. The `npm run start:multi` script starts multiple instances of the application, equal to the available parallelism minus one, with each instance listening on a different port. Requests are automatically load balanced across the instances.
-NodeJS CRUD API
